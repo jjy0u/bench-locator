@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "address": "Hill Top View Point, Primrose Hill",
+    "city": "London",
+    "postcode": "NW8 7ED",
+    "24hour_access": true,
+    "view": "Skyline",
+    "accessibility": false,
+    "capacity": 4,
+    "engraved_message": null,
+    "memorial_bench": false
+  },
+
+  {
+    "id": 2,
+    "address": "Greenwich Park, King George Street",
+    "city": "London",
+    "postcode": "SE10 8QY",
+    "24hour_access": false,
+    "view": "Royal Observatory",
+    "accessibility": true,
+    "capacity": 2,
+    "engraved_message": "In loving memory of Jane Smith",
+    "memorial_bench": true
+  },
+
+  {
+    "id": 3,
+    "address": "Kensington Gardens, The Italian Gardens",
+    "city": "London",
+    "postcode": "W2 2UH",
+    "24hour_access": true,
+    "view": "Fountain",
+    "accessibility": true,
+    "capacity": 3,
+    "engraved_message": "Forever in our hearts",
+    "memorial_bench": true
+  },
+
+  {
+    "id": 4,
+    "address": "Regent's Park, Chester Road",
+    "city": "London",
+    "postcode": "NW1 4NR",
+    "24hour_access": true,
+    "view": "Rose Garden",
+    "accessibility": false,
+    "capacity": 2,
+    "engraved_message": null,
+    "memorial_bench": false
+  },
+
+  {
+    "id": 5,
+    "address": "Hyde Park, The Serpentine",
+    "city": "London",
+    "postcode": "W2 2UH",
+    "24hour_access": false,
+    "view": "Lake",
+    "accessibility": true,
+    "capacity": 4,
+    "engraved_message": "In loving memory of Tom Johnson",
+    "memorial_bench": true
+  },
+  {
+    "id": 6,
+    "address": "St. James's Park, The Mall",
+    "city": "London",
+    "postcode": "SW1A 2BJ",
+    "24hour_access": false,
+    "view": "Duck pond",
+    "accessibility": true,
+    "capacity": 3,
+    "engraved_message": "In memory of our beloved mother",
+    "memorial_bench": true
+  },
+
+  {
+    "id": 7,
+    "address": "Richmond Park, Pembroke Lodge",
+    "city": "London",
+    "postcode": "TW10 5HX",
+    "24hour_access": false,
+    "view": "King Henry's Mound",
+    "accessibility": true,
+    "capacity": 2,
+    "engraved_message": null,
+    "memorial_bench": false
+  },
+
+  {
+    "id": 8,
+    "address": "Victoria Park, Grove Road",
+    "city": "London",
+    "postcode": "E3 5TB",
+    "24hour_access": true,
+    "view": "Boating lake",
+    "accessibility": false,
+    "capacity": 4,
+    "engraved_message": "In loving memory of John Smith",
+    "memorial_bench": true
+  },
+
+  {
+    "id": 9,
+    "address": "Green Park, Constitution Hill",
+    "city": "London",
+    "postcode": "SW1A 1BB",
+    "24hour_access": false,
+    "view": "The Queen Victoria Memorial",
+    "accessibility": true,
+    "capacity": 2,
+    "engraved_message": "Always in our hearts",
+    "memorial_bench": true
+  },
+  {
+    "id": 10,
+    "address": "Battersea Park, Chelsea Bridge Gate",
+    "city": "London",
+    "postcode": "SW11 4NJ",
+    "24hour_access": true,
+    "view": "Pagoda",
+    "accessibility": true,
+    "capacity": 3,
+    "engraved_message": "Always in our hearts",
+    "memorial_bench": true
+  }
+]
