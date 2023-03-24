@@ -1,10 +1,48 @@
 import './App.scss';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import Main from './components/Main/Main';
+import BenchPage from './containers/BenchPage/BenchPage';
+import { useEffect, useState } from 'react'
 
-function App() {
+const App = () => {
+
+  const [benches, setBenches] = useState([])
+
+
+  const getBenches = async () => {
+    const url = "http://localhost:8080/benches";
+    const res = await fetch(url);
+    const data = await res.json();
+    setBenches(data)
+  };
+
+  useEffect(() => {
+    getBenches()
+  }, [])
+
+
   return (
-    <div className="App">
-      Bench Locator
-    </div>
+    <Router>
+      <div className="App">
+        <Nav/>
+        <Routes>
+        <Route 
+          path='/bench/:benchId' 
+          element={<BenchPage 
+          benchArr = {benches}
+          />} 
+        />
+
+          <Route
+            path = '/'
+            element={<Main
+            benchArr = {benches}
+            />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

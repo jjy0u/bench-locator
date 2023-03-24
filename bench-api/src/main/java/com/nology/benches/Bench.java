@@ -5,17 +5,17 @@ public class Bench {
     private String address;
     private String city;
     private String postcode;
-    private String twentyFourHourAccess;
+    private boolean twentyFourHourAccess;
     private String view;
-    private String accessibility;
-    private String capacity;
+    private boolean accessibility;
+    private long capacity;
     private String engravedMessage;
-    private String memorialBench;
+    private boolean memorialBench;
 
     public Bench() {
     }
 
-    public Bench(long id, String address, String city, String postcode, String twentyFourHourAccess, String view, String accessibility, String capacity, String engravedMessage, String memorialBench) {
+    public Bench(long id, String address, String city, String postcode, boolean twentyFourHourAccess, String view, boolean accessibility, long capacity, String engravedMessage, boolean memorialBench) {
         this.id = id;
         this.address = address;
         this.city = city;
@@ -60,11 +60,11 @@ public class Bench {
         this.postcode = postcode;
     }
 
-    public String getTwentyFourHourAccess() {
+    public boolean isTwentyFourHourAccess() {
         return twentyFourHourAccess;
     }
 
-    public void setTwentyFourHourAccess(String twentyFourHourAccess) {
+    public void setTwentyFourHourAccess(boolean twentyFourHourAccess) {
         this.twentyFourHourAccess = twentyFourHourAccess;
     }
 
@@ -76,19 +76,19 @@ public class Bench {
         this.view = view;
     }
 
-    public String getAccessibility() {
+    public boolean isAccessibility() {
         return accessibility;
     }
 
-    public void setAccessibility(String accessibility) {
+    public void setAccessibility(boolean accessibility) {
         this.accessibility = accessibility;
     }
 
-    public String getCapacity() {
+    public long getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(String capacity) {
+    public void setCapacity(long capacity) {
         this.capacity = capacity;
     }
 
@@ -100,11 +100,11 @@ public class Bench {
         this.engravedMessage = engravedMessage;
     }
 
-    public String getMemorialBench() {
+    public boolean isMemorialBench() {
         return memorialBench;
     }
 
-    public void setMemorialBench(String memorialBench) {
+    public void setMemorialBench(boolean memorialBench) {
         this.memorialBench = memorialBench;
     }
 }
