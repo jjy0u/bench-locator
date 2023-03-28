@@ -32,6 +32,24 @@ public class BenchesRepository {
         return benches.get(random.nextInt(benches.size()));
     }
 
+    public void updateBench(Bench newBench, int id){
+        for (int i = 0; i < benches.size(); i++) {
+            if(benches.get(i).getId() == id){
+                benches.set(i, newBench);
+                return;
+            }
+        }
+    }
+
+    public boolean hasBench(long id){
+        for(Bench bench: benches){
+            if(bench.getId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean deleteBenchById(@PathVariable int id) {
 
         if (id < benches.size() && id >= 0) {

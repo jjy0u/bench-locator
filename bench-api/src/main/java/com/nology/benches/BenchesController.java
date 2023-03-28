@@ -9,25 +9,29 @@ import java.util.List;
 @RestController
 public class BenchesController {
     @Autowired
-    BenchesRepository benchesRepository;
+    BenchesService benchesService;
 
     @GetMapping("/benches")
-    public List<Bench> getBenches() {
-        return benchesRepository.getAllBenches();
+    public List<Bench> getBenches(@RequestParam(required = false) boolean isTwentyFourHr, @RequestParam(defaultValue = "5") int limit) {
+        if (isTwentyFourHr) {
+            return benchesService.getBenchByOpening(true, limit);
+        }
+        return benchesService.getAllBenches(limit);
     }
 
     @GetMapping("/benches/{id}")
     public Bench getBenchById(@PathVariable long id){
-        return benchesRepository.getBenchById(id);
+        return benchesService.getBenchById(id);
     }
 
     @GetMapping("/benches/random")
     public Bench getRandomBench() {
-        return benchesRepository.getRandomBench();
+        return benchesService.getRandomBench();
     }
 
     @DeleteMapping("/benches/{id}")
-    public boolean deleteBenchById(@PathVariable int id) {
-        return benchesRepository.deleteBenchById(id);
+    public String deleteBenchById(@PathVariable int id) {
+        benchesService.deleteBenchById(id);
+        return "Deleted Bench";
     }
 }

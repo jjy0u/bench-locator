@@ -9,9 +9,9 @@
     "accessibility": false,
     "capacity": 4,
     "engraved_message": null,
-    "memorial_bench": false
+    "memorial_bench": false,
+    "bench_image": "https://images.unsplash.com/photo-1519861531471-b8cc28b14f0d"
   },
-
   {
     "id": 2,
     "address": "Greenwich Park, King George Street",
@@ -22,9 +22,9 @@
     "accessibility": true,
     "capacity": 2,
     "engraved_message": "In loving memory of Jane Smith",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1533867656518-6b1c86744b89"
   },
-
   {
     "id": 3,
     "address": "Kensington Gardens, The Italian Gardens",
@@ -35,9 +35,9 @@
     "accessibility": true,
     "capacity": 3,
     "engraved_message": "Forever in our hearts",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1496850923425-a1593ca1897b"
   },
-
   {
     "id": 4,
     "address": "Regent's Park, Chester Road",
@@ -48,9 +48,9 @@
     "accessibility": false,
     "capacity": 2,
     "engraved_message": null,
-    "memorial_bench": false
+    "memorial_bench": false,
+    "bench_image": "https://images.unsplash.com/photo-1602203577978-44c62b1e75d7"
   },
-
   {
     "id": 5,
     "address": "Hyde Park, The Serpentine",
@@ -61,7 +61,8 @@
     "accessibility": true,
     "capacity": 4,
     "engraved_message": "In loving memory of Tom Johnson",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1610356423834-f2384b85f2f4"
   },
   {
     "id": 6,
@@ -73,7 +74,8 @@
     "accessibility": true,
     "capacity": 3,
     "engraved_message": "In memory of our beloved mother",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1511546398151-6cc0f641bc51"
   },
 
   {
@@ -86,7 +88,8 @@
     "accessibility": true,
     "capacity": 2,
     "engraved_message": null,
-    "memorial_bench": false
+    "memorial_bench": false,
+    "bench_image": "https://images.unsplash.com/photo-1610356423834-f2384b85f2f4"
   },
 
   {
@@ -99,7 +102,8 @@
     "accessibility": false,
     "capacity": 4,
     "engraved_message": "In loving memory of John Smith",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1610356423834-f2384b85f2f4"
   },
 
   {
@@ -112,7 +116,9 @@
     "accessibility": true,
     "capacity": 2,
     "engraved_message": "Always in our hearts",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1610356423834-f2384b85f2f4"
+
   },
   {
     "id": 10,
@@ -124,6 +130,73 @@
     "accessibility": true,
     "capacity": 3,
     "engraved_message": "Always in our hearts",
-    "memorial_bench": true
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1610356423834-f2384b85f2f4"
+  },
+  {
+    "id": 11,
+    "address": "Hampstead Heath, Parliament Hill",
+    "city": "London",
+    "postcode": "NW5 1QR",
+    "twenty_four_hour": false,
+    "view": "City skyline",
+    "accessibility": false,
+    "capacity": 2,
+    "engraved_message": null,
+    "memorial_bench": false,
+    "bench_image": "https://images.unsplash.com/photo-1602880115565-944a06d7fbd2"
+  },
+  {
+    "id": 12,
+    "address": "Greenwich Park, National Maritime Museum",
+    "city": "London",
+    "postcode": "SE10 9NF",
+    "twenty_four_hour": false,
+    "view": "Greenwich Observatory",
+    "accessibility": true,
+    "capacity": 4,
+    "engraved_message": "In memory of Sarah Wilson",
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1577186931382-1fb416e36212"
+  },
+  {
+    "id": 13,
+    "address": "Hyde Park, The Italian Gardens",
+    "city": "London",
+    "postcode": "W2 2UH",
+    "twenty_four_hour": false,
+    "view": "Fountain",
+    "accessibility": true,
+    "capacity": 3,
+    "engraved_message": "In memory of Jack Thomas",
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1588017704639-9d81d7df63b8"
+  },
+  {
+    "id": 14,
+    "address": "St. James's Park, The Mall",
+    "city": "London",
+    "postcode": "SW1A 2BJ",
+    "twenty_four_hour": false,
+    "view": "St. James's Palace",
+    "accessibility": true,
+    "capacity": 2,
+    "engraved_message": null,
+    "memorial_bench": false,
+    "bench_image": "https://images.unsplash.com/photo-1511546398151-6cc0f641bc51"
+  },
+  {
+    "id": 15,
+    "address": "Regent's Park, Queen Mary's Gardens",
+    "city": "London",
+    "postcode": "NW1 4NR",
+    "twenty_four_hour": true,
+    "view": "Rose Garden",
+    "accessibility": true,
+    "capacity": 4,
+    "engraved_message": "In loving memory of Emily Wilson",
+    "memorial_bench": true,
+    "bench_image": "https://images.unsplash.com/photo-1602203577978-44c62b1e75d7"
   }
+
 ]
