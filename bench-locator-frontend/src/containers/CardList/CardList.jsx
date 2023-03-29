@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from "react-router-dom";
 import Card from '../../components/Card/Card';
 import './CardList.scss'
 
@@ -11,7 +10,6 @@ const CardList = (props) => {
     const cardsListJSX = benchArr.map((bench) => {
             interval++
         return ( 
-        //<Link to={`/bench/${bench.id}`} key = {bench.id}>
         <Card
               number = {interval}
               location = {bench.address} // remove numbers from address and anything after a comma
@@ -22,7 +20,6 @@ const CardList = (props) => {
               isTwentyFourHours = {bench.twentyFourHourAccess}
               id = {bench.id}
               />
-        //</Link>
           )
       })
 
