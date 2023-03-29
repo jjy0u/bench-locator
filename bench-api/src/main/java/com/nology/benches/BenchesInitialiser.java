@@ -35,7 +35,8 @@ public class BenchesInitialiser {
                 JSONObject benchJSON = (JSONObject) bench;
 
                 long id = (long) benchJSON.get("id");
-                String address = (String) benchJSON.get("address");
+                String address1 = (String) benchJSON.get("address1");
+                String address2 = (String) benchJSON.get("address2");
                 String city = (String) benchJSON.get("city");
                 String postcode = (String) benchJSON.get("postcode");
                 boolean twentyFourHourAccess = (boolean) benchJSON.get("twenty_four_hour");
@@ -44,8 +45,13 @@ public class BenchesInitialiser {
                 long capacity = (long) benchJSON.get("capacity");
                 String engravedMessage = (String) benchJSON.get("engraved_message");
                 boolean memorialBench = (boolean) benchJSON.get("memorial_bench");
+                boolean shaded = (boolean) benchJSON.get("shaded");
+                boolean picnicTable = (boolean) benchJSON.get("picnic_table");
+                String openingTime = (String) benchJSON.get("opening_time");
+                String closingTime = (String) benchJSON.get("closing_time");
 
-                benchesRepository.addBench((new Bench(id,address,city,postcode,twentyFourHourAccess,view,accessibility,capacity,engravedMessage,memorialBench)));
+
+                benchesRepository.addBench((new Bench(id,address1,address2,city,postcode,twentyFourHourAccess,view,accessibility,capacity,engravedMessage,memorialBench,shaded, picnicTable, openingTime, closingTime)));
             }
         } catch (Exception e) {
                 e.printStackTrace();

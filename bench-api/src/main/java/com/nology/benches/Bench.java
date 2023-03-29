@@ -2,7 +2,8 @@ package com.nology.benches;
 
 public class Bench {
     private long id;
-    private String address;
+    private String address1;
+    private String address2;
     private String city;
     private String postcode;
     private boolean twentyFourHourAccess;
@@ -11,13 +12,19 @@ public class Bench {
     private long capacity;
     private String engravedMessage;
     private boolean memorialBench;
+    private boolean shaded;
+    private boolean picnicTable;
 
-    public Bench() {
-    }
+    private String openingTime;
+    private String closingTime;
 
-    public Bench(long id, String address, String city, String postcode, boolean twentyFourHourAccess, String view, boolean accessibility, long capacity, String engravedMessage, boolean memorialBench) {
+
+    public Bench() {}
+
+    public Bench(long id, String address1, String address2, String city, String postcode, boolean twentyFourHourAccess, String view, boolean accessibility, long capacity, String engravedMessage, boolean memorialBench, boolean shaded, boolean picnicTable, String openingTime, String closingTime) {
         this.id = id;
-        this.address = address;
+        this.address1 = address1;
+        this.address2 = address2;
         this.city = city;
         this.postcode = postcode;
         this.twentyFourHourAccess = twentyFourHourAccess;
@@ -26,6 +33,10 @@ public class Bench {
         this.capacity = capacity;
         this.engravedMessage = engravedMessage;
         this.memorialBench = memorialBench;
+        this.shaded = shaded;
+        this.picnicTable = picnicTable;
+        this.openingTime = openingTime;
+        this.closingTime = closingTime;
     }
 
     public long getId() {
@@ -36,12 +47,20 @@ public class Bench {
         this.id = id;
     }
 
-    public String getAddress() {
-        return address;
+    public String getAddress1() {
+        return address1;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress1(String address1) {
+        this.address1 = address1;
+    }
+
+    public String getAddress2() {
+        return address2;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2 = address2;
     }
 
     public String getCity() {
@@ -107,4 +126,39 @@ public class Bench {
     public void setMemorialBench(boolean memorialBench) {
         this.memorialBench = memorialBench;
     }
+
+    public boolean isShaded() {
+        return shaded;
+    }
+
+    public void setShaded(boolean shaded) {
+        this.shaded = shaded;
+    }
+
+    public boolean isPicnicTable() {
+        return picnicTable;
+    }
+
+    public void setPicnicTable(boolean picnicTable) {
+        this.picnicTable = picnicTable;
+    }
+
+    public String getOpeningTime() {
+        return openingTime;
+    }
+
+    public void setOpeningTime(String openingTime) {
+        this.openingTime = openingTime;
+    }
+
+    public String getClosingTime() {
+        return closingTime;
+    }
+
+    public void setClosingTime(String closingTime) {
+        this.closingTime = closingTime;
+    }
 }
+
+
+

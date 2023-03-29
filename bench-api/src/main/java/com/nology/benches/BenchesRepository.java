@@ -51,7 +51,6 @@ public class BenchesRepository {
     }
 
     public boolean deleteBenchById(@PathVariable int id) {
-
         if (id < benches.size() && id >= 0) {
             benches.remove(id);
             return true;
