@@ -22,7 +22,7 @@ const AddBench = () => {
   const defaultFormState = { address: "", city: "", postcode: "", twentyFourHourAccess: "", openingTime: "", closingTime: "", shaded: "", picnicTable: "" };
 
   return (
-    <div>
+    <div className='add-bench'>
       <Form handleSubmit={handleSubmit} defaultFormState={defaultFormState}/>
     </div>
   )

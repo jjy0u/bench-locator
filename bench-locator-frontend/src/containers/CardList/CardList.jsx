@@ -12,8 +12,9 @@ const CardList = (props) => {
         return ( 
         <Card
               number = {interval}
-              location = {bench.address} // remove numbers from address and anything after a comma
-              address = {bench.address}
+              location = {bench.address1} // remove numbers from address and anything after a comma
+              address1 = {bench.address1}
+              address2 = {bench.address2}
               city = {bench.city}
               postcode = {bench.postcode}
               times = {bench.time}

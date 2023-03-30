@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Card = (props) => {
-    const {number, location, address, postcode, times, city, isTwentyFourHours,id} = props
+    const {number, location, address1, address2, postcode, times, city, isTwentyFourHours,id} = props
 
     let isOpen
     let openColour
@@ -22,8 +22,8 @@ const Card = (props) => {
     <div className= 'card'>
             <h1 className='card__list-number'>{number}</h1>
         <div className='card__overview'>
-            <h2 className='card__title'>{location}</h2>
-            <p className='card__address'>{address}, {city}</p>
+            <h2 className='card__title'>{location} Bench</h2>
+            <p className='card__address'>{address1}, {address2}, {city}</p>
             <p className='card__postcode'>{postcode}</p>
             <div className='card__details'>
                 <p className='card__opening'><span className={openColour}>{isOpen}</span> {times}</p>

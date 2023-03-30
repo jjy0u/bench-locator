@@ -29,21 +29,17 @@ const App = () => {
       <div className="App">
         <Nav/>
         <Routes>
-
-        <Route 
-          path='/bench/add-bench' 
-          element={<AddBench 
-          />} 
-        />
-
-
-        <Route 
-          path='/bench/:benchId' 
-          element={<BenchPage 
-          benchArr = {benches}
-          />} 
-        />
-
+          <Route 
+            path='/bench/add-bench' 
+            element={<AddBench 
+            />} 
+          />
+          <Route 
+            path='/bench/:benchId' 
+            element={<BenchPage 
+            benchArr = {benches}
+            />} 
+          />
           <Route
             path = '/'
             element={<Main
