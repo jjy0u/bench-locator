@@ -13,7 +13,7 @@ const Form = ({ defaultFormState, handleSubmit }) => {
 //       return;
 //     }
 
-//     handleSubmit(bench);
+    handleSubmit(bench);
    };
 
   return (

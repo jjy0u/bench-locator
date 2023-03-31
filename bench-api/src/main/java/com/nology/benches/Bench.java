@@ -1,6 +1,14 @@
 package com.nology.benches;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Bench {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String address1;
     private String address2;
@@ -14,14 +22,16 @@ public class Bench {
     private boolean memorialBench;
     private boolean shaded;
     private boolean picnicTable;
-
     private String openingTime;
     private String closingTime;
-
+    private String description;
+    private String benchImage;
+    private String longitude;
+    private String latitude;
 
     public Bench() {}
 
-    public Bench(long id, String address1, String address2, String city, String postcode, boolean twentyFourHourAccess, String view, boolean accessibility, long capacity, String engravedMessage, boolean memorialBench, boolean shaded, boolean picnicTable, String openingTime, String closingTime) {
+    public Bench(long id, String address1, String address2, String city, String postcode, boolean twentyFourHourAccess, String view, boolean accessibility, long capacity, String engravedMessage, boolean memorialBench, boolean shaded, boolean picnicTable, String openingTime, String closingTime, String description, String benchImage, String longitude, String latitude) {
         this.id = id;
         this.address1 = address1;
         this.address2 = address2;
@@ -37,6 +47,11 @@ public class Bench {
         this.picnicTable = picnicTable;
         this.openingTime = openingTime;
         this.closingTime = closingTime;
+        this.description = description;
+        this.benchImage = benchImage;
+        this.longitude = longitude;
+        this.latitude = latitude;
+
     }
 
     public long getId() {
@@ -157,6 +172,38 @@ public class Bench {
 
     public void setClosingTime(String closingTime) {
         this.closingTime = closingTime;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getBenchImage() {
+        return benchImage;
+    }
+
+    public void setBenchImage(String benchImage) {
+        this.benchImage = benchImage;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
     }
 }
 

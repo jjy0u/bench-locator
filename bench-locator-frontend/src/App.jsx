@@ -2,11 +2,10 @@ import './App.scss';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Main from './components/Main/Main';
-import BenchPage from './pages/BenchOverview/BenchOverview';
+import BenchOverview from './pages/BenchOverview/BenchOverview';
 import AddBench from './pages/AddBench/AddBench';
 
 import { useEffect, useState } from 'react'
-
 const App = () => {
 
   const [benches, setBenches] = useState([])
@@ -36,7 +35,7 @@ const App = () => {
           />
           <Route 
             path='/bench/:benchId' 
-            element={<BenchPage 
+            element={<BenchOverview 
             benchArr = {benches}
             />} 
           />

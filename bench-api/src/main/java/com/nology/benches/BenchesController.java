@@ -1,8 +1,11 @@
 package com.nology.benches;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.awt.print.Book;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -17,6 +20,20 @@ public class BenchesController {
             return benchesService.getBenchByOpening(true, limit);
         }
         return benchesService.getAllBenches(limit);
+    }
+
+    @PostMapping("/bench")
+    public ResponseEntity<Bench> createBench(@RequestBody Bench bench){
+        benchesService.addBench(bench);
+        return ResponseEntity.status(HttpStatus.CREATED).body(bench);
+    }
+
+    @PostMapping("/benches")
+    public String addBenches(@RequestBody List<Bench> benches) {
+        for (Bench bench: benches) {
+            benchesService.addBench(bench);
+        }
+        return "benches added!";
     }
 
     @GetMapping("/benches/{id}")
