@@ -2,12 +2,14 @@ import React from 'react'
 import './Main.scss'
 import CardList from '../../containers/CardList/CardList'
 import Map from '../Map/Map'
+import SideNav from '../SideNav/SideNav'
 
 const Main = (props) => {
     const {benchArr, inputLocation} = props
-    
+
   return (
     <div className='main'>
+      {/* <SideNav checkOpen = {checkOpen} checkAccess={checkAccess} handleCheck = {handleCheck}/> */}
       <h3 className='main__heading'>Closest benches that match your search: "{inputLocation}"</h3>
       <div className='main__bench-location'>
         <div className='main__img-container'>

@@ -42,10 +42,20 @@ public class BenchesService {
         return benchesIds;
     }
 
-    public List<Bench> getBenchByOpening(boolean isTwentyFourHr, int limit){
+    public List<Bench> getBenchByFilters(boolean isTwentyFourHr, boolean isAccessible, int limit){
         List<Bench> benches = benchesRepository.findAll();
-        return benches.stream().filter(bench -> bench.isTwentyFourHourAccess()).limit(limit).collect(Collectors.toList());
+        return benches.stream().filter(bench -> bench.isTwentyFourHourAccess() & bench.isAccessibility()).limit(limit).collect(Collectors.toList());
     }
+
+//    public List<Bench> getBenchByAccess(boolean isAccessible, int limit){
+//        List<Bench> benches = benchesRepository.findAll();
+//        return benches.stream().filter(bench -> bench.isAccessibility()).limit(limit).collect(Collectors.toList());
+//    }
+//
+//    public List<Bench> getBenchByShade(boolean isShaded, int limit){
+//        List<Bench> benches = benchesRepository.findAll();
+//        return benches.stream().filter(bench -> bench.isShaded()).limit(limit).collect(Collectors.toList());
+//    }
 
     // UPDATE
     public void updateBench(Bench newBench, int id) {

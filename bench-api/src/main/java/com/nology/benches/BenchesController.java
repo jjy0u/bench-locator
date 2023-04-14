@@ -15,12 +15,20 @@ public class BenchesController {
     BenchesService benchesService;
 
     @GetMapping("/benches")
-    public List<Bench> getBenches(@RequestParam(required = false) boolean isTwentyFourHr, @RequestParam(defaultValue = "5") int limit) {
-        if (isTwentyFourHr) {
-            return benchesService.getBenchByOpening(true, limit);
-        }
+    public List<Bench> getBenches(@RequestParam(required = false) boolean isTwentyFourHr, @RequestParam(required = false) boolean isAccessibility, @RequestParam(defaultValue = "5") int limit) {
+//        if (isTwentyFourHr & !isAccessibility) {
+//            return benchesService.getBenchByFilters(true, false, limit);
+//        } else if (!isTwentyFourHr & !isAccessibility){
+//            return benchesService.getBenchByFilters(false, false, limit);
+//        } else if (!isTwentyFourHr){
+//            return benchesService.getBenchByFilters(false,true, limit);
+//        } else if (isTwentyFourHr & isAccessibility){
+//            return benchesService.getBenchByFilters(true,true, limit);
+//        }
+
         return benchesService.getAllBenches(limit);
     }
+
 
     @PostMapping("/bench")
     public ResponseEntity<Bench> createBench(@RequestBody Bench bench){
